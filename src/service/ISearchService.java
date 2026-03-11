@@ -1,0 +1,9 @@
+package service;
+
+import java.awt.*;
+import java.util.List;
+
+public interface ISearchService {
+    List<MenuItem> findByName(String name);
+    List<MenuItem> findByPriceRange(double minPrice, double maxPrice);
+}
